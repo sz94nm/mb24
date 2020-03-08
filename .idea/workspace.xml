@@ -19,8 +19,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/site/home.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="355">
-              <caret line="113" lean-forward="true" selection-start-line="113" selection-end-line="113" />
+            <state relative-caret-position="83">
+              <caret line="97" column="30" selection-start-line="97" selection-start-column="30" selection-end-line="97" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -182,10 +182,10 @@
         <option value="$PROJECT_DIR$/../ImageGridEffects/index2.html" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/PostController.php" />
         <option value="$PROJECT_DIR$/resources/views/dashboard/table.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/site/home.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/OptionController.php" />
         <option value="$PROJECT_DIR$/public/css/grid.css" />
         <option value="$PROJECT_DIR$/public/css/site.css" />
+        <option value="$PROJECT_DIR$/resources/views/site/home.blade.php" />
       </list>
     </option>
   </component>
@@ -504,7 +504,7 @@
       <workItem from="1555118744230" duration="8948000" />
       <workItem from="1555235730758" duration="767000" />
       <workItem from="1555295099913" duration="1214000" />
-      <workItem from="1555376919122" duration="11577000" />
+      <workItem from="1555376919122" duration="12304000" />
     </task>
     <task id="LOCAL-00001" summary="some fixes and stuff">
       <created>1555041045301</created>
@@ -573,7 +573,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="153407000" />
+    <option name="totallyTimeSpent" value="154134000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -586,7 +586,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="776" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4988399" visible="true" weight="0.30744338" />
       <window_info id="Structure" order="1" sideWeight="0.5011601" side_tool="true" weight="0.24838188" />
@@ -898,8 +897,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/site/home.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="113" lean-forward="true" selection-start-line="113" selection-end-line="113" />
+        <state relative-caret-position="83">
+          <caret line="97" column="30" selection-start-line="97" selection-start-column="30" selection-end-line="97" selection-end-column="30" />
         </state>
       </provider>
     </entry>
