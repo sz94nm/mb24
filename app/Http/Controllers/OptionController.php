@@ -102,7 +102,7 @@ class OptionController extends Controller
 
             //$img->resize(400, null, function ($constraint) {
               //  $constraint->aspectRatio();
-            });
+            //});
             $img->save('uploads/' . $filename);
             $data["cover"] = 'uploads/' . $filename;
         }
