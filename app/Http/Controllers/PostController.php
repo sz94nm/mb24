@@ -63,19 +63,26 @@ class PostController extends Controller
         $data = $this->validate($request, $rules);
         $image = $request->file('image');
         //storing original size the usual way
-        $files[0] = $image->store("uploads");
+       // $files[0] = $image->store("uploads");
+
+
+	$filename =str_random(30). '.' . $image->getClientOriginalExtension();
+        $img = Image::make($image->getRealPath());
+
+        $img->save('uploads/' . $filename);
+        $files[0] = 'uploads/' . $filename;
 
         //giving a unique file name to the thumbnail
 
-        $filename =str_random(30). '.' . $image->getClientOriginalExtension();
-        $img = Image::make($image->getRealPath());
+        $filename1 =str_random(30). '.' . $image->getClientOriginalExtension();
+        //$img = Image::make($image->getRealPath());
 
         $img->resize(400, null, function ($constraint) {
             $constraint->aspectRatio();
         });
 
-        $img->save('uploads/' . $filename);
-        $files[1] = 'uploads/' . $filename;
+        $img->save('uploads/' . $filename1);
+        $files[1] = 'uploads/' . $filename1;
 
         $data["image"] = $files;
         Post::create($data);

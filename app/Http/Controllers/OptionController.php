@@ -89,11 +89,22 @@ class OptionController extends Controller
             "contact" => "required",
         ];
         $data = $this->validate($request, $rules);
-        if ($request->hasFile('cover')) {
+      //  if ($request->hasFile('cover')) {
 
-            $path = $request->file('cover')->store('uploads');
+//            $path = $request->file('cover')->store('uploads');
 //            $path = str_replace("public/images", "", $path);
-            $data["cover"] = $path;
+  //          $data["cover"] = $path;
+        }
+	if ($request->hasFile('cover')) {
+            $image = $request->file('cover');
+            $filename ='cover.' . $image->getClientOriginalExtension();
+            $img = Image::make($image->getRealPath());
+
+            //$img->resize(400, null, function ($constraint) {
+              //  $constraint->aspectRatio();
+            });
+            $img->save('uploads/' . $filename);
+            $data["cover"] = 'uploads/' . $filename;
         }
         if ($request->hasFile('profile')) {
             $image = $request->file('profile');
