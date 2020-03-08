@@ -94,7 +94,7 @@ class OptionController extends Controller
 //            $path = $request->file('cover')->store('uploads');
 //            $path = str_replace("public/images", "", $path);
   //          $data["cover"] = $path;
-        }
+   //     }
 	if ($request->hasFile('cover')) {
             $image = $request->file('cover');
             $filename ='cover.' . $image->getClientOriginalExtension();
