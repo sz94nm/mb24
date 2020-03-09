@@ -31,10 +31,20 @@ class CreateUsersTable extends Migration
         );
         DB::table('users')->insert(
             array(
+                'name' => 'saif',
+                'email' => 'saif@gmail.com',
+                'password'=>'password'
+            ),
+	array(
+                'name' => 'mary',
+                'email' => 'mary@gmail.com',
+                'password'=>'password'
+            ),
+	array(
                 'name' => 'admin',
                 'email' => 'admin@gmail.com',
                 'password'=>'password'
-            )
+            ),
         );
     }
 
